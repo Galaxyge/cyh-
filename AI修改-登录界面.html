@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登录界面</title>
+    <!-- 样式定义 -->
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* 容器样式 */
+        .container {
+            background-color: #1a1a1a;
+            max-width: 400px;
+            padding: 30px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+        }
+
+        /* 标题样式 */
+        .title {
+            text-align: center;
+            margin: 20px auto;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ffcc;
+            border-bottom: 2px solid #00ffcc;
+        }
+
+        /* 输入框组样式 */
+        .input-group {
+            margin: 20px 0;
+        }
+
+        /* 输入框标签样式 */
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #00ffcc;
+        }
+
+        /* 输入框样式 */
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #00ffcc;
+            border-radius: 5px;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            font-size: 16px;
+        }
+
+        /* 登录按钮样式 */
+        .login-button {
+            background-color: #00ffcc;
+            color: #0d0d0d;
+            padding: 10px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* 登录按钮悬停效果 */
+        .login-button:hover {
+            background-color: #009999;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 登录表单容器 -->
+    <div class="container">
+        <!-- 标题 -->
+        <div class="title">登录</div>
+        <!-- 表单开始 -->
+        <form>
+            <!-- 账号输入组 -->
+            <div class="input-group">
+                <label for="account">账号</label>
+                <input type="text" id="account" name="account">
+            </div>
+            <!-- 密码输入组 -->
+            <div class="input-group">
+                <label for="password">密码</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <!-- 登录按钮 -->
+            <button type="submit" class="login-button">登录</button>
+        </form>
+    </div>
+</body>
+
+</html>
